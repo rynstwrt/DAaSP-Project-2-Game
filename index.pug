@@ -1,11 +1,16 @@
 doctype html
 html(lang="en")
     head
-        include headertags
-        link(rel="stylesheet" type="text/css" href="shared.css")
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
+        title Kim.
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet")
         link(rel="stylesheet" type="text/css" href="main.css")
-        script(src="sharedfunctions.js")
+        script(src="logichandler.js" defer)
 body
-    h1 Kim.
-    p.blink Click anywhere to begin.
-    script document.body.addEventListener("click", () => { fadeOutAll(); loadNextPage("page1"); });
+    h2#big-text Hey, my name is Kim.
+        span#cursor |
+    #option-box
+        p.option#option1 This is the first option.
+        p.option#option2 This is the second option.
