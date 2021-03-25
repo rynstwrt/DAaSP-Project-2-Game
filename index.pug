@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+    head
+        include headertags
+        link(rel="stylesheet" type="text/css" href="shared.css")
+        link(rel="stylesheet" type="text/css" href="main.css")
+        script(src="sharedfunctions.js")
+body
+    h1 Kim.
+    p.blink Click anywhere to begin.
+    script document.body.addEventListener("click", () => { fadeOutAll(); loadNextPage("page1"); });

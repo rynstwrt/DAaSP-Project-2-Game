@@ -1,113 +1,14 @@
-@keyframes wave-text {
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.7);
-  }
-}
-@keyframes frame2 {
-  0% {
-    transform: rotate(-10deg);
-  }
-  100% {
-    transform: rotate(10deg);
-  }
-}
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
-  background-color: #EFEFEF;
-  font-family: "Roboto", sans-serif;
-}
-
-h2 {
-  letter-spacing: 0.25rem;
-}
-
-p {
-  letter-spacing: 0.1rem;
-}
-
-.blink {
-  opacity: 0;
-  animation: blink 0.5s ease-in infinite alternate;
-}
-
-.footer-text {
-  position: absolute;
-  bottom: 0;
-  padding: 1rem 0;
-}
-
-#click-catcher {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-#container {
-  height: 50%;
-  background-color: #040404;
-  color: #EFEFEF;
-  position: relative;
-}
-#container .frame {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out;
-}
-
-#Frame1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-#Frame1 #wave {
-  max-width: 80%;
-  font-size: 1.25rem;
-  display: flex;
-  flex-wrap: wrap;
-  white-space: pre-wrap;
-  justify-content: center;
-  align-items: center;
-}
-#Frame1 #wave p {
-  transform: scale(0.7);
-}
 
-#Frame2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#Frame2 h2 {
-  font-size: 4.5rem;
-  animation: frame2 0.1s ease-in-out infinite alternate;
+h1 {
+  font-size: 8rem;
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
