@@ -1,47 +1,56 @@
-const screens = [
-    {
-        bigtext: "Hey, my name is Kim.",
-        option1: {
-            text: "This is the first option",
-            bigtext: "Big text if you choose option 1",
-            option1text: "Option 1 text if you choose option 1",
-            option2text: "Option 2 text if you choose option 1"
-        },
-        option2: {
-            text: "This is the 2nd option.",
-            bigtext: "Big text if you choose option 2",
-            option1text: "Option 1 text if you choose option 2",
-            option2text: "Option 2 text if you choose option 2"
-        }
-    },
-    {
-        bigtext: "This is the screen AFTER the option click after the option click.",
-        option1: {
-            text: "This is the first option",
-            bigtext: "Big text if you choose option 1",
-            option1text: "Option 1 text if you choose option 1",
-            option2text: "Option 2 text if you choose option 1"
-        },
-        option2: {
-            text: "This is the 2nd option.",
-            bigtext: "Big text if you choose option 2",
-            option1text: "Option 1 text if you choose option 2",
-            option2text: "Option 2 text if you choose option 2"
-        }
-    }
-];
-
-
-const bigText = document.getElementById("big-text");
-const option1Elem = document.getElementById("option1");
-const option2Elem = document.getElementById("option2");
-let screenIndex = 0;
-function loadScreen(screen)
+// Set the frame on the screen
+function setFrame(bigtext, option1text, option2text)
 {
-    bigText.textContent = screen.bigtext;
-    option1Elem.textContent = screen.option1.text;
-    option2Elem.textContent = screen.option2.text;
+    option1.style.animation = "";
+    option2.style.animation = "";
+
+    option1.textContent = option1text;
+    option2.textContent = option2text;
+
+    typeText(bigtext).then(() =>
+    {
+        option1.style.animation = "fadeIn .3s ease-in-out forwards";
+        option2.style.animation = "fadeIn .3s ease-in-out forwards";
+        isTyping = false;
+    });
+}
+setFrame(screens[0].bigtext, screens[0].option1.text, screens[0].option2.text);
+
+
+// Handle option clicks
+let isSecondPart = true;
+let screenIndex = 0;
+function onOptionClick(isFirstOption)
+{
+    if (isTyping) return;
+
+    if (screenIndex === screens.length)
+    {
+        // TODO: handle end of game here
+        // option1.style.animation = "";
+        // option2.style.animation = "";
+        //
+        // typeText("Thanks for playing :)").then(() =>
+        // {
+        //
+        // });
+        return;
+    }
+
+    const screen = screens[screenIndex];
+
+    if (isSecondPart)
+    {
+        ++screenIndex;
+        isSecondPart = false;
+        const option = (isFirstOption) ? screen.option1 : screen.option2;
+        setFrame(option.bigtext, option.option1text, option.option2text);
+        return;
+    }
+
+    isSecondPart = true;
+    setFrame(screen.bigtext, screen.option1.text, screen.option2.text);
 }
 
-
-loadScreen(screens[screenIndex]);
+option1.addEventListener("click", () => { onOptionClick(true); });
+option2.addEventListener("click", () => { onOptionClick(false); });
