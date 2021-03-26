@@ -1,6 +1,6 @@
 const screens = [
     {
-        bigtext: "Hey! I'm Kim.#What's up?",
+        bigtext: "Hey! I'm Kim.|What's up?",
         option1: {
             text: "Not much, just playing this game.",
             bigtext: "Ah, nice. I guess I should tell you more about myself.",
@@ -15,18 +15,39 @@ const screens = [
         }
     },
     {
-        bigtext: "My name is Kim. I make ends meet, but barely. Who are you?",
+        bigtext: "I make ends meet, but barely. I have a daughter.|Who are you?",
         option1: {
-            text: "This is the first option",
-            bigtext: "Big text if you choose option 1 AFTER",
-            option1text: "Option 1 text if you choose option 1",
-            option2text: "Option 2 text if you choose option 1"
+            text: "Just some person.",
+            bigtext: "Hey, that's cool.",
+            option1text: "I guess...",
+            option2text: "Ayup."
         },
         option2: {
-            text: "This is the 2nd option.",
-            bigtext: "Big text if you choose option 2 AFTER",
-            option1text: "Option 1 text if you choose option 2",
-            option2text: "Option 2 text if you choose option 2"
+            text: "Honestly, I don't know yet.",
+            bigtext: "Deeeeeep.",
+            option1text: "Lol.",
+            option2text: "Eat my shorts."
         }
+    },
+    {
+
     }
 ];
+
+console.log(screens.length * 3);
+
+
+/*
+
+CHARACTERS:
+- workplace harasser
+- david (boss)
+- jeremy (friend) - drugs
+
+WIP EVENTS:
+- rude customer
+- workplace harassment
+- request to transfer gets denied
+- overdose
+
+*/

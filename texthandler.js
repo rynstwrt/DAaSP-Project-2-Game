@@ -1,11 +1,10 @@
 // User variables
-
-
 const charDelay = 50;
-const whitespaceDelay = 10;
+const whitespaceDelay = 30;
 const delayChar = "_";
 const delayCharDelay = 400;
-const newLineChar = "#";
+const newLineChar = "|";
+const newLineDelay = 200;
 
 // Internal variables
 const big = document.getElementById("big-text");
@@ -30,16 +29,14 @@ function typeText(text)
             const isNewLineChar = chars[i] === newLineChar;
 
             totalAdditionalDelay += isDelayChar ? delayCharDelay : 0;
-            totalAdditionalDelay += chars[i].trim() === "" ? whitespaceDelay : 0;
+            totalAdditionalDelay += chars[i].match(/\s+/gm) != null ? whitespaceDelay : 0;
+            totalAdditionalDelay += isNewLineChar ? newLineDelay : 0;
 
             setTimeout(() =>
             {
                 big.textContent += (isDelayChar || isNewLineChar ? "" : chars[i]) + (isNewLineChar ? "\r\n" : "");
-
-                if (i === chars.length - 1)
-                {
-                    resolve();
-                }
+                audio.currentTime = 0;
+                audio.play().then(() => { if (i === chars.length - 1) resolve(); });
             }, charDelay * i + totalAdditionalDelay);
         }
     });

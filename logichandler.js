@@ -14,7 +14,6 @@ function setFrame(bigtext, option1text, option2text)
         isTyping = false;
     });
 }
-setFrame(screens[0].bigtext, screens[0].option1.text, screens[0].option2.text);
 
 
 // Handle option clicks
@@ -27,13 +26,6 @@ function onOptionClick(isFirstOption)
     if (screenIndex === screens.length)
     {
         // TODO: handle end of game here
-        // option1.style.animation = "";
-        // option2.style.animation = "";
-        //
-        // typeText("Thanks for playing :)").then(() =>
-        // {
-        //
-        // });
         return;
     }
 
@@ -54,3 +46,13 @@ function onOptionClick(isFirstOption)
 
 option1.addEventListener("click", () => { onOptionClick(true); });
 option2.addEventListener("click", () => { onOptionClick(false); });
+
+
+// Handle on first load (click anywhere to begin)
+// Sets up audio for texthandler to deal with.
+const audio = new Audio("text.mp3");
+audio.volume = .25;
+document.body.addEventListener("click", () =>
+{
+    setFrame(screens[0].bigtext, screens[0].option1.text, screens[0].option2.text);
+}, { once: true });
