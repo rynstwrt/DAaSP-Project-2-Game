@@ -13,6 +13,12 @@ $color-foreground: black;
     100% { opacity: 1; }
 }
 
+@keyframes fadeOut
+{
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 *
 {
     margin: 0;
@@ -74,10 +80,12 @@ body
     justify-content: center;
     align-items: center;
     white-space: pre-wrap;
+    width: 100%;
 }
 
 #big-text
 {
+    width: 100%;
     text-align: left;
     line-height: 8rem;
     font-family: "Quicksand", sans-serif;
