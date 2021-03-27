@@ -61,7 +61,7 @@ function handleTypeText(bigtext, fadeToBlack)
 
 // Handle option clicks
 let isSecondPart = true;
-let screenIndex = 5;
+let screenIndex = 14;
 function onOptionClick(isFirstOption)
 {
     if (isTyping || screenIndex === screens.length) return;

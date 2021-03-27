@@ -30,7 +30,7 @@ const screens = [
         }
     },
     {
-        bigtext: "Anyway, I gotta go to work.",
+        bigtext: "Anyway, I gotta go to my main job.",
         option1: {
             text: "Lame.",
             bigtext: "I felt that.",
@@ -114,10 +114,10 @@ const screens = [
             option2text: "Me too!"
         },
         option2: {
-            text: "What's your favorite color?",
-            bigtext: "Orange.",
-            option1text: "Not a common one, I will say that.",
-            option2text: "Awesome."
+            text: "You implied you had a side job?",
+            bigtext: "I'll explain later.",
+            option1text: "Cool.",
+            option2text: "Uhh, ok."
         }
     },
     {
@@ -183,49 +183,95 @@ const screens = [
         fadetoblack: true
     },
     {
-        bigtext: "",
+        bigtext: "I lied to you.",
         option1: {
-            text: "",
-            bigtext: "",
-            option1text: "",
-            option2text: ""
+            text: "Explain.",
+            bigtext: "Well,_._._.",
+            option1text: "Spit it out.",
+            option2text: "Take your time."
         },
         option2: {
-            text: "",
-            bigtext: "",
-            option1text: "",
-            option2text: ""
+            text: "Uhh...",
+            bigtext: "Well, __I,__",
+            option1text: "Are you okay?",
+            option2text: "What happened?"
         }
     },
     {
-        bigtext: "",
+        bigtext: "Remember a week or so ago when I left abruptly?",
         option1: {
-            text: "",
-            bigtext: "",
-            option1text: "",
-            option2text: ""
+            text: "Yeah.",
+            bigtext: "My friend overdosed.|__That's why I left. To go see him in the hospital.",
+            option1text: "Oh my god.",
+            option2text: "..."
         },
         option2: {
-            text: "",
-            bigtext: "",
-            option1text: "",
-            option2text: ""
+            text: "Mhm.",
+            bigtext: "My friend overdosed.|__That's why I left_._._._|To go see him in the hospital.",
+            option1text: "...",
+            option2text: "Overdosed?"
         }
     },
     {
-        bigtext: "",
+        bigtext: "He died today_._._.|That's why I'm mentioning it now.__|",
         option1: {
-            text: "",
-            bigtext: "",
+            text: "I'm so sorry.",
+            bigtext: "Addiction sucks.",
+            option1text: "Do you know from personal experience?",
+            option2text: "It does."
+        },
+        option2: {
+            text: "Are you okay?",
+            bigtext: "Addiction sucks.",
+            option1text: "Do you know from personal experience?",
+            option2text: "It does."
+        }
+    },
+    {
+        bigtext: "I mean,_ most of my friends use.",
+        option1: {
+            text: "I'm so sorry for you.",
+            bigtext: "Don't be.__|Be sorry for them.",
+            option1text: "What do you mean?",
+            option2text: "..."
+        },
+        option2: {
+            text: "I'm so sorry for them.",
+            bigtext: "Yeah,_ the way addiction works is awful.",
+            option1text: "How does it work, exactly?",
+            option2text: "..."
+        }
+    },
+    {
+        bigtext: "It searches for people who need anything but more problems.|Namely, most marginalized groups.",
+        option1: {
+            text: "That's awful.",
+            bigtext: "Yeah.",
+            option1text: "Anyway...",
+            option2text: "..."
+        },
+        option2: {
+            text: "Which groups primarily?",
+            bigtext: "People of color,_ sex workers,_ and LGBTQ+ individuals mostly.",
+            option1text: "I see.",
+            option2text: "That's awful."
+        }
+    },
+    {
+        bigtext: "Today sucks.__|I'm going to lie down for a bit.",
+        option1: {
+            text: "That's completely understandable.",
+            bigtext: "Bye.",
             option1text: "",
             option2text: ""
         },
         option2: {
-            text: "",
-            bigtext: "",
+            text: "Bye.",
+            bigtext: "See you around.",
             option1text: "",
             option2text: ""
-        }
+        },
+        fadetoblack: true
     }
 ];
 
@@ -251,33 +297,13 @@ const screens = [
 }
 
 
-
-CHARACTERS:
-- jeremy (friend) - drugs
-
-WIP EVENTS:
-- overdose
-
-CURRENT PLOT NOTES:
-- explain two jobs
-    - i'll tell you later
-
-- So... ask me a question:
-    - got many friends?
-    - What color are your eyes?
-
-
-
-
-
-
-
 END PLANS:
     - explain narrator
-    - explain that this is the past.
-
     - explain the two jobs
+
     - workplace harassment statistic
     - explain why kim and police aren't friends
-    - police and sex worker statistic
+        - police and sex worker statistic
+    - explain jeremy and sex worker attraction to drugs
+        - use sw drug statistic
 */
