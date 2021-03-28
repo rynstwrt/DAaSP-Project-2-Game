@@ -128,23 +128,34 @@ body
 
 #sources
 {
-    max-width: 78%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
     position: absolute;
     bottom: 0;
-    padding-bottom: 5rem;
     opacity: 0;
     pointer-events: none;
 
-    p
+    p:not(.fact)
     {
         font-size: 1rem;
         text-decoration: underline;
         font-weight: bold;
         margin-bottom: .25rem;
+        text-align: center;
+    }
+
+    ul
+    {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0 3rem;
+    }
+
+    #facts
+    {
+        list-style: decimal;
+        font-weight: bold;
+        font-size: .8rem;
     }
 
     a
@@ -175,6 +186,32 @@ body
     {
         width: 500px;
     }
+
+    .smaller-font
+    {
+        font-size: 2.1rem;
+        line-height: 3.1rem;
+    }
+
+    #sources
+    {
+        p:not(.fact)
+        {
+            font-size: 1.7rem;
+            margin-bottom: .7rem;
+        }
+
+        ul
+        {
+            margin-bottom: 3rem;
+            padding: 0 3rem;
+        }
+
+        #facts, a
+        {
+            font-size: 1.15rem;
+        }
+    }
 }
 
 @media (min-width: 1200px)
@@ -195,6 +232,34 @@ body
         padding: .75rem 1rem;
         font-weight: lighter;
         font-size: 1.5rem;
+    }
+
+    .smaller-font
+    {
+        font-size: 2.25rem;
+        line-height: 3.5rem;
+    }
+
+    #sources
+    {
+        bottom: 2rem;
+
+        p:not(.fact)
+        {
+            font-size: 1.7rem;
+            margin-bottom: .7rem;
+        }
+
+        ul
+        {
+            margin-bottom: 1rem;
+            padding: 0 3rem;
+        }
+
+        #facts, a
+        {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -220,5 +285,33 @@ body
     {
         font-size: 2rem;
         width: 750px;
+    }
+
+    .smaller-font
+    {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+
+    #sources
+    {
+        bottom: 2rem;
+
+        p:not(.fact)
+        {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        ul
+        {
+            margin-bottom: 1.5rem;
+            padding: 0 3rem;
+        }
+
+        #facts, a
+        {
+            font-size: 1.75rem;
+        }
     }
 }

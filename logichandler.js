@@ -130,7 +130,7 @@ option2.addEventListener("click", () => { onOptionClick(false); });
 
 
 const smallTextMode = false;
-const endingMode = false;
+const endingMode = true;
 
 // Handle on first load (click anywhere to begin)
 // Sets up audio for texthandler to deal with.

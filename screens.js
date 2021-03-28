@@ -25,7 +25,7 @@ const screens = [
         option2: {
             text: "Honestly, I don't know yet.",
             bigtext: "Deeeeeep.",
-            option1text: "Lol.",
+            option1text: "*laugh*",
             option2text: "Eat my shorts."
         }
     },
@@ -214,7 +214,7 @@ const screens = [
         }
     },
     {
-        bigtext: "He died today_._._.|That's why I'm mentioning it now.",
+        bigtext: "He died today._|That's why I'm mentioning it now.",
         option1: {
             text: "I'm so sorry.",
             bigtext: "Addiction sucks.",
@@ -389,7 +389,7 @@ const screens = [
         bigtext: "Let me explain a few things that weren't very obvious in this story.__|For instance_, Kim's implied second job was sex work.",
         option1: {
             text: "Ooooh.",
-            bigtext: "And that Kim and the police aren't friends due to sex worker's relationship with them.__|Also, 22% of trans people report police harassment.",
+            bigtext: "And that Kim and the police aren't friends due to sex worker's relationship with them.__|Also, 22% of trans people report experiencing police harassment.",
             option1text: "",
             option2text: ""
         },
@@ -408,25 +408,6 @@ const screens = [
 
 
 /*
-
-
-{
-    bigtext: "",
-    option1: {
-        text: "",
-        bigtext: "",
-        option1text: "",
-        option2text: ""
-    },
-    option2: {
-        text: "",
-        bigtext: "",
-        option1text: "",
-        option2text: ""
-    }
-}
-
-
 STATISTICS:
     - The amount of hate crimes related to gender-identity increased 20% in 2019.
     https://ucr.fbi.gov/hate-crime/2018/topic-pages/victims
@@ -439,5 +420,4 @@ STATISTICS:
 
     - Ninety percent of the trans community[iii] report some form of harassment, mistreatment and discrimination in the workplace. One survey found that for homeless shelters, only 30% were open to housing transgender women[iv] As a result, LGBTQ-identified individuals have often relied on sex work as a means of survival.
     https://www.americanprogress.org/issues/lgbtq-rights/reports/2016/01/07/128323/discrimination-against-transgender-women-seeking-access-to-homeless-shelters/
-
 */
