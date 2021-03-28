@@ -1,6 +1,6 @@
 const screens = [
     {
-        bigtext: "Hey! I'm Kim.|What's up?",
+        bigtext: "Hey!_ I'm Kim._|What's up?",
         option1: {
             text: "Not much, just playing this game.",
             bigtext: "Ah, nice._|I guess I should tell you more about myself.",
@@ -15,7 +15,7 @@ const screens = [
         }
     },
     {
-        bigtext: "I make ends meet, but barely._ I have a daughter._|She's 6._|Who are you?",
+        bigtext: "Anyway,_ I make ends meet, but barely._ I have a daughter._|She's 6._|Who are you?",
         option1: {
             text: "Just some person.",
             bigtext: "Hey, that's cool.",
@@ -49,8 +49,8 @@ const screens = [
         bigtext: "Work sucked today.",
         option1: {
             text: "Why?",
-            bigtext: "A guy at work today got mad at me for messing up his coffee.|He called me a slur and left.",
-            option1text: "HOLY SHIT!",
+            bigtext: "A guy got mad at me for messing up his coffee.|He called me a slur and left.",
+            option1text: "HOLY HELL!",
             option2text: "Are you okay?"
         },
         option2: {
@@ -103,7 +103,8 @@ const screens = [
             bigtext: "I requested to transfer,_ but my boss declined it._ So I quit.",
             option1text: "What an asshole.",
             option2text: "Good for you."
-        }
+        },
+        smallerfont: true
     },
     {
         bigtext: "So_._._._ yeah.__|Anyway,_ ask me anything I guess.",
@@ -201,19 +202,19 @@ const screens = [
         bigtext: "Remember a week or so ago when I left abruptly?",
         option1: {
             text: "Yeah.",
-            bigtext: "My friend overdosed.|__That's why I left. To go see him in the hospital.",
+            bigtext: "My friend overdosed.|__That's why I left._._._|To go see him in the hospital.",
             option1text: "Oh my god.",
             option2text: "..."
         },
         option2: {
             text: "Mhm.",
-            bigtext: "My friend overdosed.|__That's why I left_._._._|To go see him in the hospital.",
+            bigtext: "My friend overdosed.|__That's why I left._._._|To go see him in the hospital.",
             option1text: "...",
             option2text: "Overdosed?"
         }
     },
     {
-        bigtext: "He died today_._._.|That's why I'm mentioning it now.__|",
+        bigtext: "He died today_._._.|That's why I'm mentioning it now.",
         option1: {
             text: "I'm so sorry.",
             bigtext: "Addiction sucks.",
@@ -272,6 +273,135 @@ const screens = [
             option2text: ""
         },
         fadetoblack: true
+    },
+    {
+        bigtext: "Hey.",
+        option1: {
+            text: "Who are you?",
+            bigtext: "I'm the narrator,_ duh.",
+            option1text: "Ooooooh.",
+            option2text: "Calm down, it wasn't that obvious."
+        },
+        option2: {
+            text: "Hi.",
+            bigtext: "Well...",
+            option1text: "Well what?",
+            option2text: "???"
+        },
+        narrator: true
+    },
+    {
+        bigtext: "I'm here to tell you about Kim.",
+        option1: {
+            text: "What?",
+            bigtext: "She omitted major parts of her life in your interactions._|Let's travel back in time and reintroduce you two.",
+            option1text: "",
+            option2text: ""
+        },
+        option2: {
+            text: "What about Kim?",
+            bigtext: "She omitted major parts of her life in your interactions._|Let's travel back in time and reintroduce you two.",
+            option1text: "",
+            option2text: ""
+        },
+        fadetoblack: true,
+        narrator: true
+    },
+    {
+        bigtext: "Yo.",
+        option1: {
+            text: "Hi...",
+            bigtext: "What's wrong?",
+            option1text: "Nothing.",
+            option2text: "Just a bit out of it."
+        },
+        option2: {
+            text: "Hello.",
+            bigtext: "Who are you?",
+            option1text: "Just a person.",
+            option2text: "The coolest person ever."
+        }
+    },
+    {
+        bigtext: "Haha,_ gotcha.",
+        option1: {
+            text: "Who are you?",
+            bigtext: "Well, let's get into it.",
+            option1text: "*awkwardly laugh*",
+            option2text: "Okay."
+        },
+        option2: {
+            text: "What's up?",
+            bigtext: "Not much,_ the same old.",
+            option1text: "Tell me about yourself.",
+            option2text: "*sit in awkward silence*"
+        }
+    },
+    {
+        bigtext: "There are some things you should know about me first, though.__|It's not bad,_ but it ties into my stories often.",
+        option1: {
+            text: "Like what?",
+            bigtext: "Think it's best if I just run down a list real quick,_like_, before I get into it?",
+            option1text: "Sure.",
+            option2text: "That makes sense, I guess."
+        },
+        option2: {
+            text: "Explain.",
+            bigtext: "Think it's best if I just run down a list real quick,_ like,_ before I get into it?",
+            option1text: "Screw it.",
+            option2text: "Whatever you're comfortable with."
+        }
+    },
+    {
+        bigtext: "So._._._ I'm Kim.__|I was assigned male at birth but no longer identify as male.__|I do sex work as a second job in order to raise my daughter.",
+        option1: {
+            text: "Sex work?",
+            bigtext: "Yeah.__|Nobody does it because it's fun or easy — it's neither of those things.__|But for a few reasons,_ finding steady employment isn't very viable.",
+            option1text: "I see.",
+            option2text: "I'm familiar."
+        },
+        option2: {
+            text: "Assigned male at birth?",
+            bigtext: "Yup!__|The trans experience is different for everyone,_ but for me it was debilitating amounts of pain not to transition.",
+            option1text: "I see.",
+            option2text: "I understand."
+        },
+        smallerfont: true,
+    },
+    {
+        bigtext: "I know that's kind of jarring to some,_ but it's my life_ — the one I live every day_ — despite wishing things were different sometimes.",
+        option1: {
+            text: "Is life hard as a sex worker?",
+            bigtext: "Too much sometimes._._._ Absolutely too much.__|It's why so many workers turn to drugs in order to just TOLERATE life.",
+            option1text: "",
+            option2text: ""
+        },
+        option2: {
+            text: "Is life hard as a trans person?",
+            bigtext: "Overwhelmingly so.__|In 2019 hate crimes related to gender-identity bias increased by 20% in the United States.",
+            option1text: "",
+            option2text: ""
+        },
+        smallerfont: true,
+        fadetoblack: true
+    },
+    {
+        bigtext: "Let me explain a few things that weren't very obvious in this story.__|For instance_, Kim's implied second job was sex work.",
+        option1: {
+            text: "Ooooh.",
+            bigtext: "And that Kim and the police aren't friends due to sex worker's relationship with them.__|Also, 22% of trans people report police harassment.",
+            option1text: "",
+            option2text: ""
+        },
+        option2: {
+            text: "Well, duh.",
+            bigtext: "Well, did you know that the reason Kim and the police aren't friends was due to sex worker's relationship with them?__|Also, 22% of trans people report police harassment.",
+            option1text: "",
+            option2text: ""
+        },
+        smallerfont: true,
+        narrator: true,
+        fadetoblack: true
     }
 ];
 
@@ -297,13 +427,17 @@ const screens = [
 }
 
 
-END PLANS:
-    - explain narrator
-    - explain the two jobs
+STATISTICS:
+    - The amount of hate crimes related to gender-identity increased 20% in 2019.
+    https://ucr.fbi.gov/hate-crime/2018/topic-pages/victims
 
-    - workplace harassment statistic
-    - explain why kim and police aren't friends
-        - police and sex worker statistic
-    - explain jeremy and sex worker attraction to drugs
-        - use sw drug statistic
+    - 22% of transgender people who had interacted with police reported police harassment
+    https://www.transequality.org/sites/default/files/docs/resources/NCTE%20Federal%20Blueprint%20Chapter%206%20Police%20and%20Ending%20Violence.pdf
+
+    - With discrimination in jobs, education and services, poverty has long been a queer issue. The trans community are twice as likely to be unemployed compared to cisgender individuals.
+    https://www.transequality.org/sites/default/files/docs/resources/NTDS_Report.pdf
+
+    - Ninety percent of the trans community[iii] report some form of harassment, mistreatment and discrimination in the workplace. One survey found that for homeless shelters, only 30% were open to housing transgender women[iv] As a result, LGBTQ-identified individuals have often relied on sex work as a means of survival.
+    https://www.americanprogress.org/issues/lgbtq-rights/reports/2016/01/07/128323/discrimination-against-transgender-women-seeking-access-to-homeless-shelters/
+
 */

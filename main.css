@@ -35,30 +35,46 @@ html, body {
 
 body {
   color: black;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
   text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.narrator-option {
+  background-color: #FF6600;
+  color: black;
+}
+.narrator-option:hover {
+  background-color: black;
+  color: #FF6600;
 }
 
 .option {
-  background-color: #FFFC00;
   padding: 1rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-transform: uppercase;
-  font-size: 2rem;
-  width: 750px;
+  font-size: 1rem;
+  width: 250px;
   border: 2px solid black;
   opacity: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder;
 }
-.option:hover {
+.option:not(.narrator-option) {
+  background-color: #FFFC00;
+}
+.option:hover:not(.narrator-option) {
   color: #FFFC00;
   background-color: black;
+}
+
+.smaller-font {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 #option-box {
@@ -68,20 +84,22 @@ body {
 }
 
 #big-text-container {
-  font-size: 3.5rem;
-  max-width: 75%;
-  padding: 0 5rem;
+  max-width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   white-space: pre-wrap;
   width: 100%;
+  padding-bottom: 2rem;
+}
+#big-text-container:not(.smaller-font) {
+  font-size: 1.5rem;
+  line-height: 3rem;
 }
 
 #big-text {
   width: 100%;
   text-align: left;
-  line-height: 8rem;
   font-family: "Quicksand", sans-serif;
   font-weight: bolder;
 }
@@ -89,6 +107,81 @@ body {
   content: "|";
   opacity: 0;
   animation: cursor 0.5s ease-in-out alternate infinite;
+}
+
+#sources {
+  max-width: 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5rem;
+  opacity: 0;
+  pointer-events: none;
+}
+#sources p {
+  font-size: 1rem;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+#sources a {
+  color: inherit;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+#sources a:hover {
+  text-decoration-style: solid;
+}
+
+@media (min-width: 600px) {
+  #big-text-container:not(.smaller-font) {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .option {
+    width: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  #big-text-container {
+    max-width: 70%;
+  }
+
+  #big-text-container:not(.smaller-font) {
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+
+  .option {
+    padding: 0.75rem 1rem;
+    font-weight: lighter;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1700px) {
+  body {
+    letter-spacing: 0.2rem;
+  }
+
+  #big-text-container {
+    max-width: 75%;
+  }
+
+  #big-text-container:not(.smaller-font) {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+
+  .option {
+    font-size: 2rem;
+    width: 750px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

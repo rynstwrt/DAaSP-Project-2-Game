@@ -32,7 +32,7 @@ function typeText(text)
             {
                 big.textContent += (isDelayChar || isNewLineChar ? "" : chars[i]) + (isNewLineChar ? "\r\n" : "");
 
-                if (!isNewLineChar && chars[i] !== " ")
+                if (!isNewLineChar && chars[i] !== " " && !isDelayChar)
                 {
                     audio.currentTime = 0;
                     audio.play().then(() =>

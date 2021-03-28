@@ -1,5 +1,6 @@
 $color-background: #FFFC00;
 $color-foreground: black;
+$color-narrator: #FF6600;
 
 @keyframes cursor
 {
@@ -35,33 +36,55 @@ html, body
 body
 {
     color: $color-foreground;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     user-select: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
     text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.narrator-option
+{
+    background-color: $color-narrator;
+    color: black;
+
+    &:hover
+    {
+        background-color: black;
+        color: $color-narrator;
+    }
 }
 
 .option
 {
-    background-color: $color-background;
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
     text-transform: uppercase;
-    font-size: 2rem;
-    width: 750px;
+    font-size: 1rem;
+    width: 250px;
     border: 2px solid black;
     opacity: 0;
-    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bolder;
 
-    &:hover
+    &:not(.narrator-option)
+    {
+        background-color: $color-background;
+    }
+
+    &:hover:not(.narrator-option)
     {
         color: $color-background;
         background-color: $color-foreground;
     }
+}
+
+.smaller-font
+{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
 #option-box
@@ -73,21 +96,25 @@ body
 
 #big-text-container
 {
-    font-size: 3.5rem;
-    max-width: 75%;
-    padding: 0 5rem;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: pre-wrap;
     width: 100%;
+    padding-bottom: 2rem;
+
+    &:not(.smaller-font)
+    {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
 }
 
 #big-text
 {
     width: 100%;
     text-align: left;
-    line-height: 8rem;
     font-family: "Quicksand", sans-serif;
     font-weight: bolder;
 
@@ -96,5 +123,102 @@ body
         content: "|";
         opacity: 0;
         animation: cursor .5s ease-in-out alternate infinite;
+    }
+}
+
+#sources
+{
+    max-width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5rem;
+    opacity: 0;
+    pointer-events: none;
+
+    p
+    {
+        font-size: 1rem;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-bottom: .25rem;
+    }
+
+    a
+    {
+        color: inherit;
+        font-size: .75rem;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+
+        &:hover
+        {
+            text-decoration-style: solid;
+        }
+    }
+}
+
+
+@media (min-width: 600px)
+{
+    #big-text-container:not(.smaller-font)
+    {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .option
+    {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    #big-text-container
+    {
+        max-width: 70%;
+    }
+
+    #big-text-container:not(.smaller-font)
+    {
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
+
+    .option
+    {
+        padding: .75rem 1rem;
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1700px)
+{
+    body
+    {
+        letter-spacing: .2rem;
+    }
+
+    #big-text-container
+    {
+        max-width: 75%;
+    }
+
+    #big-text-container:not(.smaller-font)
+    {
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+
+    .option
+    {
+        font-size: 2rem;
+        width: 750px;
     }
 }
