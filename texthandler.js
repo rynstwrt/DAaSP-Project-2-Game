@@ -34,6 +34,7 @@ function typeText(text)
 
                 if (!isNewLineChar && chars[i] !== " " && !isDelayChar)
                 {
+                    audio.pause();
                     audio.currentTime = 0;
                     audio.play().then(() =>
                     {

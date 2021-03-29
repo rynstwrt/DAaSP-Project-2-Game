@@ -2,7 +2,7 @@ const screens = [
     {
         bigtext: "Hey!_ I'm Kim._|What's up?",
         option1: {
-            text: "Not much,_ just playing this game.",
+            text: "Not much, just playing this game.",
             bigtext: "Ah,_ nice._|I guess I should tell you more about myself.",
             option1text: "Sounds good.",
             option2text: "Uh... alright.",
@@ -23,7 +23,7 @@ const screens = [
             option2text: "Ayup."
         },
         option2: {
-            text: "Honestly,_ I don't know yet.",
+            text: "Honestly, I don't know yet.",
             bigtext: "Deeeeeep.",
             option1text: "*laugh*",
             option2text: "Eat my shorts."
@@ -56,7 +56,7 @@ const screens = [
         option2: {
             text: "Doesn't it always?",
             bigtext: "A guy got mad at me for messing up his coffee.|He called me a slur and left.",
-            option1text: "Jesus Christ,_ are you good?",
+            option1text: "Jesus Christ, are you good?",
             option2text: "Oh my god."
         }
     },
@@ -81,7 +81,7 @@ const screens = [
             text: "I'm so sorry.",
             bigtext: "Thank you.",
             option1text: "Can I ask what happened?",
-            option2text: "Are you still,_ like,_ dealing with that?"
+            option2text: "Are you still, like, dealing with that?"
         },
         option2: {
             text: "How long ago was this?",
@@ -118,7 +118,7 @@ const screens = [
             text: "You implied you had a side job?",
             bigtext: "I'll explain later.",
             option1text: "Cool.",
-            option2text: "Uhh,_ ok."
+            option2text: "Uhh, ok."
         }
     },
     {
@@ -157,7 +157,7 @@ const screens = [
         option1: {
             text: "The usual.",
             bigtext: "Hey!_ Stability is good.",
-            option1text: "Haha,_ right on.",
+            option1text: "Haha, right on.",
             option2text: "*smile*"
         },
         option2: {
@@ -239,7 +239,7 @@ const screens = [
         option2: {
             text: "I'm so sorry for them.",
             bigtext: "Yeah,_ the way addiction works is awful.",
-            option1text: "How does it work,_ exactly?",
+            option1text: "How does it work, exactly?",
             option2text: "..."
         }
     },
@@ -280,7 +280,7 @@ const screens = [
             text: "Who are you?",
             bigtext: "I'm the narrator,_ duh.",
             option1text: "Ooooooh.",
-            option2text: "Calm down,_ it wasn't that obvious."
+            option2text: "Calm down, it wasn't that obvious."
         },
         option2: {
             text: "Hi.",
@@ -343,7 +343,7 @@ const screens = [
             text: "Like what?",
             bigtext: "Think it's best if I just run down a list real quick,_like_,_ before I get into it?",
             option1text: "Sure.",
-            option2text: "That makes sense,_ I guess."
+            option2text: "That makes sense, I guess."
         },
         option2: {
             text: "Explain.",
@@ -394,7 +394,7 @@ const screens = [
             option2text: ""
         },
         option2: {
-            text: "Well,_ duh.",
+            text: "Well, duh.",
             bigtext: "Well,_ did you know that the reason Kim and the police aren't friends was due to sex worker's relationship with them?__|Also,_ 22% of trans people report police harassment.",
             option1text: "",
             option2text: ""
