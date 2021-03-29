@@ -2,35 +2,35 @@ const screens = [
     {
         bigtext: "Hey!_ I'm Kim._|What's up?",
         option1: {
-            text: "Not much, just playing this game.",
-            bigtext: "Ah, nice._|I guess I should tell you more about myself.",
+            text: "Not much,_ just playing this game.",
+            bigtext: "Ah,_ nice._|I guess I should tell you more about myself.",
             option1text: "Sounds good.",
             option2text: "Uh... alright.",
         },
         option2: {
             text: "Well... I'm here aren't I?",
-            bigtext: "Snarky, huh?",
+            bigtext: "Snarky,_ huh?",
             option1text: "Haha.",
             option2text: "Whatever."
         }
     },
     {
-        bigtext: "Anyway,_ I make ends meet, but barely._ I have a daughter._|She's 6._|Who are you?",
+        bigtext: "Anyway,_ I make ends meet,_ but barely._ I have a daughter._|She's 6._|Who are you?",
         option1: {
             text: "Just some person.",
-            bigtext: "Hey, that's cool.",
+            bigtext: "Hey,_ that's cool.",
             option1text: "I guess...",
             option2text: "Ayup."
         },
         option2: {
-            text: "Honestly, I don't know yet.",
+            text: "Honestly,_ I don't know yet.",
             bigtext: "Deeeeeep.",
             option1text: "*laugh*",
             option2text: "Eat my shorts."
         }
     },
     {
-        bigtext: "Anyway, I gotta go to my main job.",
+        bigtext: "Anyway,_ I gotta go to my main job.",
         option1: {
             text: "Lame.",
             bigtext: "I felt that.",
@@ -56,7 +56,7 @@ const screens = [
         option2: {
             text: "Doesn't it always?",
             bigtext: "A guy got mad at me for messing up his coffee.|He called me a slur and left.",
-            option1text: "Jesus Christ, are you good?",
+            option1text: "Jesus Christ,_ are you good?",
             option2text: "Oh my god."
         }
     },
@@ -81,7 +81,7 @@ const screens = [
             text: "I'm so sorry.",
             bigtext: "Thank you.",
             option1text: "Can I ask what happened?",
-            option2text: "Are you still, like, dealing with that?"
+            option2text: "Are you still,_ like,_ dealing with that?"
         },
         option2: {
             text: "How long ago was this?",
@@ -118,7 +118,7 @@ const screens = [
             text: "You implied you had a side job?",
             bigtext: "I'll explain later.",
             option1text: "Cool.",
-            option2text: "Uhh, ok."
+            option2text: "Uhh,_ ok."
         }
     },
     {
@@ -138,7 +138,7 @@ const screens = [
         fadetoblack: true
     },
     {
-        bigtext: "Hey, sorry about a couple days ago.",
+        bigtext: "Hey,_ sorry about a couple days ago.",
         option1: {
             text: "No worries.",
             bigtext: "Life's been crazy recently.",
@@ -157,7 +157,7 @@ const screens = [
         option1: {
             text: "The usual.",
             bigtext: "Hey!_ Stability is good.",
-            option1text: "Haha, right on.",
+            option1text: "Haha,_ right on.",
             option2text: "*smile*"
         },
         option2: {
@@ -193,7 +193,7 @@ const screens = [
         },
         option2: {
             text: "Uhh...",
-            bigtext: "Well, __I,__",
+            bigtext: "Well,_ __I,__",
             option1text: "Are you okay?",
             option2text: "What happened?"
         }
@@ -239,12 +239,12 @@ const screens = [
         option2: {
             text: "I'm so sorry for them.",
             bigtext: "Yeah,_ the way addiction works is awful.",
-            option1text: "How does it work, exactly?",
+            option1text: "How does it work,_ exactly?",
             option2text: "..."
         }
     },
     {
-        bigtext: "It searches for people who need anything but more problems.|Namely, most marginalized groups.",
+        bigtext: "It searches for people who need anything but more problems.|Namely,_ most marginalized groups.",
         option1: {
             text: "That's awful.",
             bigtext: "Yeah.",
@@ -280,7 +280,7 @@ const screens = [
             text: "Who are you?",
             bigtext: "I'm the narrator,_ duh.",
             option1text: "Ooooooh.",
-            option2text: "Calm down, it wasn't that obvious."
+            option2text: "Calm down,_ it wasn't that obvious."
         },
         option2: {
             text: "Hi.",
@@ -326,7 +326,7 @@ const screens = [
         bigtext: "Haha,_ gotcha.",
         option1: {
             text: "Who are you?",
-            bigtext: "Well, let's get into it.",
+            bigtext: "Well,_ let's get into it.",
             option1text: "*awkwardly laugh*",
             option2text: "Okay."
         },
@@ -338,12 +338,12 @@ const screens = [
         }
     },
     {
-        bigtext: "There are some things you should know about me first, though.__|It's not bad,_ but it ties into my stories often.",
+        bigtext: "There are some things you should know about me first,_ though.__|It's not bad,_ but it ties into my stories often.",
         option1: {
             text: "Like what?",
-            bigtext: "Think it's best if I just run down a list real quick,_like_, before I get into it?",
+            bigtext: "Think it's best if I just run down a list real quick,_like_,_ before I get into it?",
             option1text: "Sure.",
-            option2text: "That makes sense, I guess."
+            option2text: "That makes sense,_ I guess."
         },
         option2: {
             text: "Explain.",
@@ -386,16 +386,16 @@ const screens = [
         fadetoblack: true
     },
     {
-        bigtext: "Let me explain a few things that weren't very obvious in this story.__|For instance_, Kim's implied second job was sex work.",
+        bigtext: "Let me explain a few things that weren't very obvious in this story.__|For instance_,_ Kim's implied second job was sex work.",
         option1: {
             text: "Ooooh.",
-            bigtext: "And that Kim and the police aren't friends due to sex worker's relationship with them.__|Also, 22% of trans people report experiencing police harassment.",
+            bigtext: "And that Kim and the police aren't friends due to sex worker's relationship with them.__|Also,_ 22% of trans people report experiencing police harassment.",
             option1text: "",
             option2text: ""
         },
         option2: {
-            text: "Well, duh.",
-            bigtext: "Well, did you know that the reason Kim and the police aren't friends was due to sex worker's relationship with them?__|Also, 22% of trans people report police harassment.",
+            text: "Well,_ duh.",
+            bigtext: "Well,_ did you know that the reason Kim and the police aren't friends was due to sex worker's relationship with them?__|Also,_ 22% of trans people report police harassment.",
             option1text: "",
             option2text: ""
         },
@@ -404,20 +404,3 @@ const screens = [
         fadetoblack: true
     }
 ];
-
-
-
-/*
-STATISTICS:
-    - The amount of hate crimes related to gender-identity increased 20% in 2019.
-    https://ucr.fbi.gov/hate-crime/2018/topic-pages/victims
-
-    - 22% of transgender people who had interacted with police reported police harassment
-    https://www.transequality.org/sites/default/files/docs/resources/NCTE%20Federal%20Blueprint%20Chapter%206%20Police%20and%20Ending%20Violence.pdf
-
-    - With discrimination in jobs, education and services, poverty has long been a queer issue. The trans community are twice as likely to be unemployed compared to cisgender individuals.
-    https://www.transequality.org/sites/default/files/docs/resources/NTDS_Report.pdf
-
-    - Ninety percent of the trans community[iii] report some form of harassment, mistreatment and discrimination in the workplace. One survey found that for homeless shelters, only 30% were open to housing transgender women[iv] As a result, LGBTQ-identified individuals have often relied on sex work as a means of survival.
-    https://www.americanprogress.org/issues/lgbtq-rights/reports/2016/01/07/128323/discrimination-against-transgender-women-seeking-access-to-homeless-shelters/
-*/

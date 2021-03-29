@@ -91,7 +91,7 @@ function onOptionClick(isFirstOption)
 
     if (screenIndex === screens.length)
     {
-        document.body.style.backgroundColor = "#505050";
+        document.body.style.backgroundColor = "#5b5d75";
         big.textContent = "";
         big.classList.remove("smaller-font");
         setTimeout(() =>
@@ -130,7 +130,7 @@ option2.addEventListener("click", () => { onOptionClick(false); });
 
 
 const smallTextMode = false;
-const endingMode = true;
+const endingMode = false;
 
 // Handle on first load (click anywhere to begin)
 // Sets up audio for texthandler to deal with.
@@ -141,6 +141,7 @@ document.body.addEventListener("click", () =>
     if (endingMode)
     {
         screenIndex = screens.length - 1;
+        charDelay = delayCharDelay = newLineDelay = 10;
     }
 
     if (smallTextMode)

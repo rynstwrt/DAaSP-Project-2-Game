@@ -132,6 +132,10 @@ body
     bottom: 0;
     opacity: 0;
     pointer-events: none;
+    white-space: normal;
+    max-width: 300px;
+    max-height: 270px;
+    overflow: scroll;
 
     p:not(.fact)
     {
@@ -147,15 +151,16 @@ body
         margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
-        text-align: left;
-        padding: 0 3rem;
-    }
-
-    #facts
-    {
         list-style: decimal;
         font-weight: bold;
         font-size: .8rem;
+    }
+
+    .fact
+    {
+        margin: .4rem;
+        text-indent: 1rem;
+        text-align: left;
     }
 
     a
@@ -195,6 +200,11 @@ body
 
     #sources
     {
+        padding: 0 5%;
+        max-height: unset;
+        overflow: unset;
+        max-width: unset;
+
         p:not(.fact)
         {
             font-size: 1.7rem;
@@ -204,10 +214,9 @@ body
         ul
         {
             margin-bottom: 3rem;
-            padding: 0 3rem;
         }
 
-        #facts, a
+        ul, a
         {
             font-size: 1.15rem;
         }
@@ -243,6 +252,7 @@ body
     #sources
     {
         bottom: 2rem;
+        padding: 0 5%;
 
         p:not(.fact)
         {
@@ -253,10 +263,9 @@ body
         ul
         {
             margin-bottom: 1rem;
-            padding: 0 3rem;
         }
 
-        #facts, a
+        ul, a
         {
             font-size: 1.2rem;
         }
@@ -296,6 +305,7 @@ body
     #sources
     {
         bottom: 2rem;
+        padding: 0 5%;
 
         p:not(.fact)
         {
@@ -306,10 +316,9 @@ body
         ul
         {
             margin-bottom: 1.5rem;
-            padding: 0 3rem;
         }
 
-        #facts, a
+        ul, a
         {
             font-size: 1.75rem;
         }

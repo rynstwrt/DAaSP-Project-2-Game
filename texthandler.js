@@ -1,9 +1,9 @@
 // User variables
-const charDelay = 50;
+let charDelay = 50;
 const delayChar = "_";
-const delayCharDelay = 400;
+let delayCharDelay = 300;
 const newLineChar = "|";
-const newLineDelay = 200;
+let newLineDelay = 200;
 
 // Internal variables
 const big = document.getElementById("big-text");
